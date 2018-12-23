@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/molehole"
+    tools:context=".GameActivity">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button1"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/mole"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button2"
+        android:background="@drawable/mole"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button3"
+        android:background="@drawable/mole"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_marginStart="57dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button4"
+        android:background="@drawable/mole"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button5"
+        android:background="@drawable/mole"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/button3"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button6"
+        android:background="@drawable/mole"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignStart="@+id/button3"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button7"
+        android:background="@drawable/mole"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button8"
+        android:background="@drawable/mole"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button9"
+        android:background="@drawable/mole"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignStart="@+id/button6"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/scoreTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#fefe00"
+        android:textSize="50sp"
+        android:text="@string/zero"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/timeTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fefe00"
+        android:text="@string/time_zero"/>
+
+    <Button
+        android:id="@+id/Funcbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/timeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-17dp"
+        android:text="選單" />
+</RelativeLayout>
+
